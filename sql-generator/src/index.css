@@ -1,0 +1,131 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(29, 29, 29);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+p, input {
+  font-size: 16px;
+}
+
+.app {
+  height: 80vh;
+  width: 80vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  
+  box-shadow: rgba(0, 0, 0, 1.16) 0 1px 4px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.code-display{
+  width: 96%;
+  margin: 2%;
+  height: 46%;
+  border-radius: 8px;
+
+  background-color: rgb(34, 34, 34);
+  overflow: hidden;
+}
+
+.buttons{
+  width: 100%;
+  height: 35px;
+  background-color:  gray;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 4px;
+  background-color: red;
+}
+.button.first{
+  background-color: red;
+}
+.button.middle{
+  background-color: yellow;
+}
+.button.last{
+  background-color: green;
+}
+
+.messages-display{
+  width: 96%;
+  margin: 2%;
+  height: 46%;
+  overflow-y:  scroll;
+}
+
+
+
+.message-display{
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  margin: 5px 0;
+
+}
+
+p#icon {
+  padding: 0 7px;
+
+
+}
+
+input {
+  margin: 2%;
+  padding: 16px;
+  
+  border: solid rgba(0, 0, 0, 0.158) 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.button-container {
+  margin: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container button {
+  text-transform: uppercase;
+  padding: 7px;
+  border: none;
+}
+
+button#get-query {
+  background-color: rgb(223, 47, 47);
+  border-radius: 10px 0 0 10px;
+}
+
+button#clear-chat {
+  background-color: rgb(255, 196, 0);
+  border-radius: 0 10px 10px 0;
+}
+
+button#get-query:hover {
+  background-color: rgb(226, 104, 104);
+}
+button#clear-chat:hover {
+  background-color: rgb(253, 215, 89);
+}
