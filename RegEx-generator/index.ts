@@ -27,7 +27,7 @@ app.post("/completions",async (req:Request, res: Response) => {
             messages: [
                 {
                     role: "user", 
-                    content: "Create a SQL request to do the following, only return the sql: " + req.body.message
+                    content: "Act as a Regex generator, only return Regex based on the following:' " + req.body.message +"'"
                 }]
         })
         res.send(completion.data.choices[0].message)
